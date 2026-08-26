@@ -1463,6 +1463,50 @@ body {
   transform: translate(-50%, -50%) translateX(-245px) scale(.72);
 }
 
+.problem-slide .story-content {
+  gap: 0;
+}
+
+.problem-slide .compact-cards {
+  margin-top: 0;
+}
+
+.compact-card p,
+.flow-grid li p,
+.product-heading > p:last-child,
+.solution-head > p:last-child,
+.value-heading > p:last-child,
+.accessibility-pitch-copy > p:not(.eyebrow),
+.audience-copy > p:not(.eyebrow),
+.ending-lead,
+.opening-lead {
+  font-size: 1rem;
+}
+
+.product-screens figcaption small,
+.product-screens figcaption strong,
+.flow-grid li > strong,
+.flow-grid li h3,
+.accessibility-panel,
+.accessibility-tags li,
+.cover-kicker,
+.cover-partner,
+.ending-thanks span,
+.qr-kicker,
+.qr-card p small {
+  font-size: .75rem;
+}
+
+.compact-card p,
+.flow-grid li p,
+.product-heading > p:last-child,
+.solution-head > p:last-child,
+.value-heading > p:last-child,
+.accessibility-pitch-copy > p:not(.eyebrow),
+.audience-copy > p:not(.eyebrow) {
+  line-height: 1.65;
+}
+
 .ending-slide {
   text-align: left;
   background:
