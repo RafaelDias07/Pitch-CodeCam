@@ -20,6 +20,74 @@
       </div>
     </section>
 
+    <section class="pitch-slide insights-slide" aria-labelledby="insights-title">
+      <div class="insights-glow insights-glow-left" aria-hidden="true"></div>
+      <div class="insights-glow insights-glow-right" aria-hidden="true"></div>
+      <div class="insights-layout insights-layout-chart">
+        <div class="insights-heading">
+          <p class="eyebrow light-eyebrow"><span></span> O cenário atual</p>
+          <h1 id="insights-title">A acessibilidade não é exceção. É uma parte real da sala de aula.</h1>
+          <p class="insights-subtitle">Matrículas em cursos de graduação de alunos com deficiência, transtornos globais do desenvolvimento ou altas habilidades/superdotação, por tipo — Brasil, 2024.</p>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-bars">
+            <div class="chart-row" style="--pct:100%; --delay:0s">
+              <span class="chart-label">Deficiência física</span>
+              <span class="chart-track"><span class="chart-fill"></span></span>
+              <span class="chart-value" data-target="29126">0</span>
+            </div>
+            <div class="chart-row" style="--pct:74.7%; --delay:.06s">
+              <span class="chart-label">Baixa visão</span>
+              <span class="chart-track"><span class="chart-fill"></span></span>
+              <span class="chart-value" data-target="21748">0</span>
+            </div>
+            <div class="chart-row" style="--pct:54.7%; --delay:.12s">
+              <span class="chart-label">Transtorno do Espectro Autista</span>
+              <span class="chart-track"><span class="chart-fill"></span></span>
+              <span class="chart-value" data-target="15941">0</span>
+            </div>
+            <div class="chart-row" style="--pct:36.3%; --delay:.18s">
+              <span class="chart-label">Deficiência intelectual</span>
+              <span class="chart-track"><span class="chart-fill"></span></span>
+              <span class="chart-value" data-target="10577">0</span>
+            </div>
+            <div class="chart-row" style="--pct:35.2%; --delay:.24s">
+              <span class="chart-label">Deficiência auditiva</span>
+              <span class="chart-track"><span class="chart-fill"></span></span>
+              <span class="chart-value" data-target="10258">0</span>
+            </div>
+            <div class="chart-row chart-row-minor" style="--pct:19.5%; --delay:.30s">
+              <span class="chart-label">Altas habilidades - Superdotação</span>
+              <span class="chart-track"><span class="chart-fill"></span></span>
+              <span class="chart-value" data-target="5667">0</span>
+            </div>
+            <div class="chart-row chart-row-minor" style="--pct:16.7%; --delay:.36s">
+              <span class="chart-label">Cegueira</span>
+              <span class="chart-track"><span class="chart-fill"></span></span>
+              <span class="chart-value" data-target="4856">0</span>
+            </div>
+            <div class="chart-row chart-row-minor" style="--pct:10.1%; --delay:.42s">
+              <span class="chart-label">Visão monocular</span>
+              <span class="chart-track"><span class="chart-fill"></span></span>
+              <span class="chart-value" data-target="2948">0</span>
+            </div>
+            <div class="chart-row chart-row-minor" style="--pct:8.2%; --delay:.48s">
+              <span class="chart-label">Surdez</span>
+              <span class="chart-track"><span class="chart-fill"></span></span>
+              <span class="chart-value" data-target="2377">0</span>
+            </div>
+            <div class="chart-row chart-row-minor" style="--pct:2.5%; --delay:.54s">
+              <span class="chart-label">Surdocegueira</span>
+              <span class="chart-track"><span class="chart-fill"></span></span>
+              <span class="chart-value" data-target="734">0</span>
+            </div>
+          </div>
+          <p class="chart-source">Fonte: Censo da Educação Superior — Brasil, 2024.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="pitch-slide memory-slide" aria-labelledby="memory-title">
       <div class="memory-glow memory-glow-left" aria-hidden="true"></div>
       <div class="memory-glow memory-glow-right" aria-hidden="true"></div>
@@ -31,23 +99,6 @@
         <img class="memory-chart-image" src="assets/forgetting-curve-designed.png" alt="Gráfico representativo da curva de esquecimento por Hermann Ebbinghaus, com revisões em horas depois, 24 horas depois, uma semana depois e um mês depois">
         <figcaption>Revisar no momento certo transforma memória passageira em conhecimento duradouro.</figcaption>
       </figure>
-    </section>
-
-    <section class="pitch-slide insights-slide" aria-labelledby="insights-title">
-      <div class="insights-glow insights-glow-left" aria-hidden="true"></div>
-      <div class="insights-glow insights-glow-right" aria-hidden="true"></div>
-      <div class="insights-layout">
-        <div class="insights-heading">
-          <p class="eyebrow light-eyebrow"><span></span> O cenário atual</p>
-          <h1 id="insights-title">A câmera já faz parte da sua rotina de estudo.</h1>
-        </div>
-        <div class="insights-grid">
-          <article><strong class="stat-number" data-target="80" data-suffix="%">0%</strong><p>dos estudantes usam o celular para tirar fotos do quadro ou dos slides durante a aula.</p></article>
-          <article><strong class="stat-number" data-target="70" data-suffix="%">0%</strong><p>consideram que alternar entre aplicativos impacta negativamente o aprendizado.</p></article>
-          <article><strong class="stat-number" data-target="7" data-suffix=" em 10">0 em 10</strong><p>afirmam que, depois da foto, o registro fica na galeria sem organização.</p></article>
-          <article><strong class="stat-number" data-target="2" data-suffix=" em 10">0 em 10</strong><p>enfrentam dificuldades reais de leitura ou visão.</p></article>
-        </div>
-      </div>
     </section>
 
     <section class="pitch-slide blank-slide" aria-label="Tela de apoio visual">
@@ -105,6 +156,30 @@
           const progress = Math.min((Date.now() - start) / duration, 1);
           const easedProgress = 1 - Math.pow(1 - progress, 3);
           number.textContent = `${Math.round(target * easedProgress)}${suffix}`;
+
+          if (progress >= 1) clearInterval(timer);
+        }, 24);
+
+        statsAnimationTimers.push(timer);
+      });
+
+      const chartValues = [...slide.querySelectorAll('.chart-value')];
+      chartValues.forEach((number, index) => {
+        const target = Number(number.dataset.target);
+        const duration = 1000 + index * 90;
+        const start = Date.now();
+        number.textContent = '0';
+
+        const timer = setInterval(() => {
+          if (run !== statsAnimationRun) {
+            clearInterval(timer);
+            return;
+          }
+
+          const progress = Math.min((Date.now() - start) / duration, 1);
+          const easedProgress = 1 - Math.pow(1 - progress, 3);
+          const value = Math.round(target * easedProgress);
+          number.textContent = value.toLocaleString('pt-BR');
 
           if (progress >= 1) clearInterval(timer);
         }, 24);
